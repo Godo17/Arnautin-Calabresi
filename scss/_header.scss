@@ -1,8 +1,14 @@
+.encabezado{
+    height: 180px;
+}
+
 .prelogo{
     background-color: #004072;
     height: 40px;
     width: 100%;
 }
+
+
 .nav_prelogo{
     display: flex;
 
@@ -23,6 +29,11 @@
 
 .logo{
     width: 285px;
+    display: flex;
+}
+
+.navegador{
+    display: flex;
 }
 
 .navbar{
@@ -31,7 +42,16 @@
     width: 100%;
 }
 
-.collapse-navbar{
-    justify-content: right;
+.navbar-collapse{
+    justify-content: right;    
 }
 
+
+
+.nav-link{
+    color: #004072;
+    border-right: 1px solid #004072;
+    align-self: center;
+    
+   
+}

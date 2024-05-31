@@ -2,6 +2,10 @@
   font-family: "Rubik", sans-serif;
 }
 
+.encabezado {
+  height: 180px;
+}
+
 .prelogo {
   background-color: #004072;
   height: 40px;
@@ -23,6 +27,11 @@
 
 .logo {
   width: 285px;
+  display: flex;
+}
+
+.navegador {
+  display: flex;
 }
 
 .navbar {
@@ -31,8 +40,14 @@
   width: 100%;
 }
 
-.collapse-navbar {
+.navbar-collapse {
   justify-content: right;
+}
+
+.nav-link {
+  color: #004072;
+  border-right: 1px solid #004072;
+  align-self: center;
 }
 
 /*# sourceMappingURL=style.css.map */
