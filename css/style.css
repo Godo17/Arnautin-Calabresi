@@ -1,5 +1,8 @@
+@charset "UTF-8";
 * {
   font-family: "Rubik", sans-serif;
+  padding: 0;
+  margin: 0;
 }
 
 .encabezado {
@@ -48,6 +51,43 @@
   color: #004072;
   border-right: 1px solid #004072;
   align-self: center;
+}
+
+.contenedor {
+  position: relative;
+  display: inline-block;
+  width: 100%;
+}
+
+.contenedor img {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+
+h1 {
+  width: 70%;
+  background-color: rgba(0, 0, 0, 0.486);
+}
+
+.contenedor h1 {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: white; /* Cambia el color del texto según tu preferencia */
+  font-size: 80px; /* Ajusta el tamaño del texto según tu preferencia */
+  text-align: center;
+}
+
+.contenedor h3 {
+  position: absolute;
+  top: 65%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: white; /* Cambia el color del texto según tu preferencia */
+  font-size: 30px; /* Ajusta el tamaño del texto según tu preferencia */
+  text-align: center;
 }
 
 /*# sourceMappingURL=style.css.map */
