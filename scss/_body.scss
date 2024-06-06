@@ -15,7 +15,7 @@ h1{
 }
 .contenedor h1 {
     position: absolute;
-    top: 35%;
+    top: 25%;
     left: 50%;
     transform: translate(-50%, -50%);
     color: white; 
@@ -30,7 +30,7 @@ h1.visible {
 
 .contenedor h3 {
     position: absolute;
-    top: 45%;
+    top: 35%;
     left: 50%;
     transform: translate(-50%, -50%);
     color: white; 
@@ -101,4 +101,15 @@ main {
     padding-left: 350px;
     padding-right:350px;
 
+}
+
+.items{
+    display: flex;
+    justify-content: space-around;
+    width: 100%;
+}
+
+.item{
+    border: 2px solid grey;
+    box-sizing:border-box;
 }
