@@ -1,37 +1,104 @@
 
 .contenedor{
-    position: relative;
     display: inline-block;
     width: 100%;
 }
 
 
-.contenedor img {
-    display: block;
-    width: 100%;
-    height: auto;
-}
 
 h1{
     width: 70%;
     background-color: rgba(0, 0, 0, 0.486);
+    font-size: 2em;
+    opacity: 0;
+    transition: opacity 1s ease-in-out
 }
 .contenedor h1 {
     position: absolute;
-    top: 50%;
+    top: 35%;
     left: 50%;
     transform: translate(-50%, -50%);
-    color: white; /* Cambia el color del texto según tu preferencia */
-    font-size: 80px; /* Ajusta el tamaño del texto según tu preferencia */
-    text-align: center;
+    color: white; 
+    font-size: 80px;  
+    text-align: center
+}
+
+
+h1.visible {
+    opacity: 1;
 }
 
 .contenedor h3 {
     position: absolute;
-    top: 65%;
+    top: 45%;
     left: 50%;
     transform: translate(-50%, -50%);
-    color: white; /* Cambia el color del texto según tu preferencia */
-    font-size: 30px; /* Ajusta el tamaño del texto según tu preferencia */
+    color: white; 
+    font-size: 30px; 
     text-align: center;
+}
+
+h3{
+    opacity: 0;
+    transition: opacity 1s ease-in-out;
+}
+
+h3.visible{
+    opacity: 1;
+}
+
+main {
+    padding-top: 250px;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items:center;
+    height: 100vh;
+    background-color: #f0f0f0;
+} 
+
+.carrusel {
+    width: 100%;
+    overflow: hidden;
+
+
+    position: relative;
+}
+
+.desliza {
+    display: flex;
+    transition: transform 0.5s ease-in-out;
+}
+
+.desliza img {
+    width: 100%;
+    flex-shrink: 0;
+}
+
+.presentacion {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    padding-top: 100px;
+    padding-left: 350px;
+    padding-right:350px;
+    height: 400px;
+
+    & h4{
+        color: rgb(85, 85, 85);
+    }
+    & p{
+        color: rgb(146, 144, 144);
+        text-align: justify;
+    }
+}
+
+.servicios{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    padding-top: 100px;
+    padding-left: 350px;
+    padding-right:350px;
+
 }
