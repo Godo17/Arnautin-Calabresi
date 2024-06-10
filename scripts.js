@@ -25,3 +25,8 @@ document.addEventListener('DOMContentLoaded', () => {
         heading.classList.add('visible');
     }, 3000); // 2000 milisegundos = 2 segundos
 });
+
+
+  var onloadCallback = function() {
+    alert("grecaptcha is ready!");
+  };
