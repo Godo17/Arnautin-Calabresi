@@ -68,7 +68,7 @@ h1 {
 
 .contenedor h1 {
   position: absolute;
-  top: 25%;
+  top: 15%;
   left: 50%;
   transform: translate(-50%, -50%);
   color: white;
@@ -82,7 +82,7 @@ h1.visible {
 
 .contenedor h3 {
   position: absolute;
-  top: 35%;
+  top: 18%;
   left: 50%;
   transform: translate(-50%, -50%);
   color: white;
@@ -130,7 +130,7 @@ h3.visible {
   padding-top: 100px;
   padding-left: 350px;
   padding-right: 350px;
-  height: 400px;
+  height: 1000px;
 }
 .presentacion h4 {
   color: rgb(85, 85, 85);
@@ -140,33 +140,40 @@ h3.visible {
   text-align: justify;
 }
 
+.tarjetas {
+  display: flex;
+}
+
+.card {
+  margin: 5px;
+}
+
 .servicios {
   display: flex;
-  align-items: center;
+  justify-content: center;
   flex-direction: column;
-  padding-top: 100px;
-  padding-left: 350px;
-  padding-right: 350px;
+  align-items: center;
   height: 400px;
+  width: 100%;
 }
 
 .items {
-  padding-top: 30px;
-  display: flex;
-  justify-content: space-around;
-  width: 100%;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr); /* 4 columnas de igual ancho */
+  gap: 10px; /* Espacio entre los elementos */
+  width: 60%;
 }
 
 .item {
   display: flex;
-  align-items: center;
   flex-direction: column;
-  text-align: center;
+  align-items: center;
   border: 2px solid black;
   border-radius: 8px;
-  padding-top: 5px;
-  margin: 8px;
-  box-sizing: 2px;
+  height: 130px;
+  padding: 20px;
+  text-align: center;
+  /* Centra el contenido dentro del div */
 }
 .item a {
   text-decoration: none;
@@ -178,7 +185,7 @@ h3.visible {
 
 .contactar {
   display: flex;
-  background-color: rgba(0, 0, 0, 0.3137254902);
+  background-color: rgba(0, 0, 0, 0.5490196078);
 }
 
 .titulos_contactar {

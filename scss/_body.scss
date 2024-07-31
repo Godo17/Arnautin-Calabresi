@@ -15,7 +15,7 @@ h1{
 }
 .contenedor h1 {
     position: absolute;
-    top: 25%;
+    top: 15%;
     left: 50%;
     transform: translate(-50%, -50%);
     color: white; 
@@ -30,7 +30,7 @@ h1.visible {
 
 .contenedor h3 {
     position: absolute;
-    top: 35%;
+    top: 18%;
     left: 50%;
     transform: translate(-50%, -50%);
     color: white; 
@@ -79,7 +79,7 @@ h3.visible{
     padding-top: 100px;
     padding-left: 350px;
     padding-right:350px;
-    height: 400px;
+    height: 1000px;
 
     & h4{
         color: rgb(85, 85, 85);
@@ -90,51 +90,54 @@ h3.visible{
     }
 }
 
-.servicios{
-    display: flex;
-    align-items: center;
-    flex-direction: column;
-    padding-top: 100px;
-    padding-left: 350px;
-    padding-right:350px;
-    height: 400px;
 
+.tarjetas{
+    display: flex;
+    
 }
 
-.items{
-    padding-top: 30px;
+.card{
+    margin: 5px;
+}
+.servicios{
     display: flex;
-    justify-content: space-around;
-
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    height: 400px;
     width: 100%;
 }
 
-.item{
+.items {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr); /* 4 columnas de igual ancho */
+    gap: 10px; /* Espacio entre los elementos */
+    width: 60%;
+}
+.item {
     display: flex;
-    align-items: center;
     flex-direction: column;
-    text-align: center;
+    align-items: center;
     border: 2px solid black;
     border-radius: 8px;
-    padding-top: 5px;
-    margin: 8px;
-    box-sizing: 2px;
-
-    & a{
+    height: 130px;
+    padding: 20px;
+    text-align: center;
+     /* Centra el contenido dentro del div */
+     & a{
         text-decoration: none;
         color: black;
 
         &:hover{
             color: red;
         }
+     }
+}
 
-
-        }
-    }
 
 .contactar{
     display: flex;
-    background-color: #00000050;
+    background-color: #0000008c;
 
 }
     
