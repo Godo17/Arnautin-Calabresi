@@ -328,4 +328,44 @@ button:hover {
   color: #0077B5;
 }
 
+@media only screen and (min-width: 320px) and (max-width: 480px) {
+  body {
+    width: 90%;
+    margin: 0 auto;
+    padding: 10px;
+  }
+  .contenedor h1 {
+    font-size: 30px;
+    top: 100px;
+  }
+  .contenedor h3 {
+    font-size: 10px;
+    top: 160px;
+  }
+  .presentacion {
+    padding: 0px;
+    height: 1600px;
+  }
+  .tarjetas {
+    flex-direction: column;
+  }
+  .servicios {
+    height: 1200px;
+  }
+  .items {
+    display: flex;
+    flex-wrap: wrap;
+  }
+  .contactar {
+    flex-direction: column;
+    justify-content: center;
+  }
+  .contactar_textos {
+    align-items: center;
+  }
+  .formulario {
+    padding: 0px;
+  }
+}
+
 /*# sourceMappingURL=style.css.map */
