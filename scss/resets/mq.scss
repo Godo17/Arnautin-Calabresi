@@ -44,8 +44,152 @@
         }
     }
 
+
     .formulario{
         padding: 0px;
+    }
+
+    .pie{
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+    }
+
+    .rutas_footer{
+        width: 100%;
+    }
+
+    .info_footer{
+        width: 100%;
+    }
+
+    .map_contenedor {
+        position: relative;
+        width: 100%;
+        padding-bottom: 56.25%; /* Relación de aspecto 16:9 */
+        height: 0;
+        overflow: hidden;
+    }
+    
+    .map_contenedor iframe {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        border: 0;
+    }
+
+    .redes_footer{
+        width: 100%;
+        justify-content: center;
+    }
+
+    .lista_footer{
+        padding-left: 0;
+    }
+
+    iframe{
+        width: 50%;
+    }
+
+
+}
+
+@media only screen and (min-width: 481px) and (max-width: 992px){
+    body{
+        width: 90%;
+        margin: 0 auto;
+        padding: 10px;
+    }
+
+    .contenedor{
+        & h1{
+            font-size: 30px;
+            top: 100px;
+        }
+        
+        & h3 {
+            font-size: 10px;
+            top: 160px;
+        }
+    }
+
+    .presentacion{
+        padding: 0px;
+        height: 1600px;
+    }
+
+    .tarjetas{
+        flex-direction: column;
+    }
+
+    .servicios{
+        height: 1200px;
+    }
+    .items{
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+    .contactar{
+        flex-direction: column;
+        justify-content: center;
+
+        &_textos{
+            align-items: center;
+        }
+    }
+
+
+    .formulario{
+        padding: 0px;
+    }
+
+    .pie{
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+    }
+
+    .rutas_footer{
+        width: 100%;
+    }
+
+    .info_footer{
+        width: 100%;
+    }
+
+    .map_contenedor {
+        position: relative;
+        width: 100%;
+        padding-bottom: 56.25%; /* Relación de aspecto 16:9 */
+        height: 0;
+        overflow: hidden;
+    }
+    
+    .map_contenedor iframe {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        border: 0;
+    }
+
+    .redes_footer{
+        width: 100%;
+        justify-content: center;
+    }
+
+    .lista_footer{
+        padding-left: 0;
+    }
+
+    iframe{
+        width: 50%;
     }
 
 }

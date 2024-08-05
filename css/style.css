@@ -1,3 +1,4 @@
+@charset "UTF-8";
 * {
   font-family: "Rubik", sans-serif;
   padding: 0;
@@ -254,6 +255,65 @@ button:hover {
   background-color: #45a049;
 }
 
+.card {
+  border: 1px solid black;
+  background: #004072;
+  border-radius: 5px;
+  padding: 20px;
+  margin: 20px;
+  box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.1);
+  cursor: pointer;
+  transition: transform 0.2s;
+}
+.card h3 {
+  color: white;
+  opacity: 100;
+}
+.card p {
+  color: white;
+}
+
+.card:hover {
+  transform: scale(1.05);
+}
+
+/* Estilos para la ventana modal */
+.modal {
+  display: none; /* Ocultar por defecto */
+  position: fixed;
+  z-index: 1;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+  background-color: rgba(0, 0, 0, 0.4);
+}
+
+.modal-content {
+  background-color: #fff;
+  margin: 15% auto;
+  padding: 20px;
+  border: 1px solid #888;
+  width: 80%;
+  max-width: 600px;
+  border-radius: 5px;
+}
+
+.close {
+  color: #aaa;
+  float: right;
+  font-size: 28px;
+  font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+  color: black;
+  text-decoration: none;
+  cursor: pointer;
+}
+
 .pie {
   display: flex;
   width: 100%;
@@ -365,6 +425,119 @@ button:hover {
   }
   .formulario {
     padding: 0px;
+  }
+  .pie {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+  }
+  .rutas_footer {
+    width: 100%;
+  }
+  .info_footer {
+    width: 100%;
+  }
+  .map_contenedor {
+    position: relative;
+    width: 100%;
+    padding-bottom: 56.25%; /* Relación de aspecto 16:9 */
+    height: 0;
+    overflow: hidden;
+  }
+  .map_contenedor iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    border: 0;
+  }
+  .redes_footer {
+    width: 100%;
+    justify-content: center;
+  }
+  .lista_footer {
+    padding-left: 0;
+  }
+  iframe {
+    width: 50%;
+  }
+}
+@media only screen and (min-width: 481px) and (max-width: 992px) {
+  body {
+    width: 90%;
+    margin: 0 auto;
+    padding: 10px;
+  }
+  .contenedor h1 {
+    font-size: 30px;
+    top: 100px;
+  }
+  .contenedor h3 {
+    font-size: 10px;
+    top: 160px;
+  }
+  .presentacion {
+    padding: 0px;
+    height: 1600px;
+  }
+  .tarjetas {
+    flex-direction: column;
+  }
+  .servicios {
+    height: 1200px;
+  }
+  .items {
+    display: flex;
+    flex-wrap: wrap;
+  }
+  .contactar {
+    flex-direction: column;
+    justify-content: center;
+  }
+  .contactar_textos {
+    align-items: center;
+  }
+  .formulario {
+    padding: 0px;
+  }
+  .pie {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+  }
+  .rutas_footer {
+    width: 100%;
+  }
+  .info_footer {
+    width: 100%;
+  }
+  .map_contenedor {
+    position: relative;
+    width: 100%;
+    padding-bottom: 56.25%; /* Relación de aspecto 16:9 */
+    height: 0;
+    overflow: hidden;
+  }
+  .map_contenedor iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    border: 0;
+  }
+  .redes_footer {
+    width: 100%;
+    justify-content: center;
+  }
+  .lista_footer {
+    padding-left: 0;
+  }
+  iframe {
+    width: 50%;
   }
 }
 

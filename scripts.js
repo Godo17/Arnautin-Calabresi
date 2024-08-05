@@ -30,3 +30,23 @@ document.addEventListener('DOMContentLoaded', () => {
   var onloadCallback = function() {
     alert("grecaptcha is ready!");
   };
+
+
+  // main servicios
+
+  function openModal(title, description) {
+    document.getElementById('modal-title').textContent = title;
+    document.getElementById('modal-description').textContent = description;
+    document.getElementById('myModal').style.display = 'block';
+  }
+  
+  function closeModal() {
+    document.getElementById('myModal').style.display = 'none';
+  }
+  
+  // Cierra el modal si el usuario hace clic fuera del contenido del modal
+  window.onclick = function(event) {
+    if (event.target == document.getElementById('myModal')) {
+      closeModal();
+    }
+  }
