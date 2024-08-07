@@ -6,6 +6,14 @@
         padding: 10px;
     }
 
+    .navbar-nav{
+        & a{
+            border-right: none;
+            align-self: end;
+        }
+
+    }
+
     .contenedor{
         & h1{
             font-size: 30px;
@@ -104,6 +112,16 @@
         padding: 10px;
     }
 
+    .navbar-nav{
+        & a{
+            border-right: none;
+            align-self: end;
+        }
+
+        
+    }
+
+    
     .contenedor{
         & h1{
             font-size: 30px;

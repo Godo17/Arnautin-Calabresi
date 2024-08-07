@@ -1,4 +1,7 @@
 
+.logo{
+    display: inline-block;
+}
 .contenedor{
     display: inline-block;
     width: 100%;
@@ -96,7 +99,7 @@ h3.visible{
     
 }
 
-.card{
+.card_personal{
     margin: 5px;
 }
 .servicios{
@@ -207,24 +210,34 @@ button:hover {
 }
 
 // MAIN SERVICIOS
-
+.cuerpo_servicios{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
 .card {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-self: center;
     border: 1px solid black;
-    background: #004072;
+    background: #ffffff;
     border-radius: 5px;
     padding: 20px;
     margin: 20px;
     box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.1);
     cursor: pointer;
     transition: transform 0.2s;
+    width: 50%;
+
 
     & h3{
-        color: white;
+        color: rgb(0, 0, 0);
         opacity: 100;
     }
 
     & p{
-        color: white;
+        color: rgb(0, 0, 0);
     }
   }
   
