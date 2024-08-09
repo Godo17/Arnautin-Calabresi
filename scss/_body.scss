@@ -281,3 +281,48 @@ button:hover {
     text-decoration: none;
     cursor: pointer;
   }
+
+  // MAIN CONTACTO
+
+  .main_contacto{
+    background-color: #444343;
+    display: flex;
+    justify-content: center;
+  }
+
+  .datos_contacto{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    padding: 10px;
+  }
+
+  .ubicacion {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .telefono {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .mail {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  // MAIN QUIENES SOMOS
+
+  .main_somos{
+    height: 500px;
+    padding-top: 100px;
+  }
+
+  .tit_estudio{
+    text-align: center;
+  }

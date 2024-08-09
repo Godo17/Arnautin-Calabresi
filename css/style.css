@@ -329,6 +329,47 @@ button:hover {
   cursor: pointer;
 }
 
+.main_contacto {
+  background-color: #444343;
+  display: flex;
+  justify-content: center;
+}
+
+.datos_contacto {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  padding: 10px;
+}
+
+.ubicacion {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.telefono {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.mail {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.main_somos {
+  height: 500px;
+  padding-top: 100px;
+}
+
+.tit_estudio {
+  text-align: center;
+}
+
 .pie {
   display: flex;
   width: 100%;
@@ -482,6 +523,10 @@ button:hover {
   iframe {
     width: 50%;
   }
+  .main_contacto {
+    padding-top: 50px;
+    flex-direction: column;
+  }
 }
 @media only screen and (min-width: 481px) and (max-width: 992px) {
   body {
@@ -561,6 +606,20 @@ button:hover {
   }
   iframe {
     width: 50%;
+  }
+  .main_contacto {
+    padding-top: 50px;
+    flex-direction: column;
+  }
+}
+@media screen and (aspect-ratio: 16/9) {
+  body {
+    padding-left: 5%;
+    padding-right: 5%;
+  }
+  .contactar {
+    display: flex;
+    justify-content: center;
   }
 }
 
