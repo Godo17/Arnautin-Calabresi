@@ -65,7 +65,7 @@
 
 h1 {
   width: 70%;
-  background-color: rgba(0, 0, 0, 0.486);
+  text-shadow: 1px 1px 0px black, -1px 1px 0px black, 1px -1px 0px black, -1px -1px 0px black; /* Sombra a la izquierda y arriba */
   font-size: 2em;
   opacity: 0;
   transition: opacity 1s ease-in-out;
@@ -79,6 +79,10 @@ h1 {
   color: white;
   font-size: 80px;
   text-align: center;
+}
+
+#subtitulo {
+  text-shadow: 1px 1px 0px black, -1px 1px 0px black, 1px -1px 0px black, -1px -1px 0px black; /* Sombra a la izquierda y arriba */
 }
 
 h1.visible {
@@ -370,6 +374,55 @@ button:hover {
   text-align: center;
 }
 
+.main_somos {
+  height: 1000px;
+}
+
+.tit_quienes {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  padding-top: 40px;
+  padding-left: 300px;
+  padding-right: 300px;
+}
+.tit_quienes p {
+  text-align: justify;
+}
+
+.nosotros {
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+  font-size: 4rem;
+  color: #9e0000;
+}
+
+.tit_mision {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  padding-top: 40px;
+  padding-left: 300px;
+  padding-right: 300px;
+}
+.tit_mision p {
+  text-align: justify;
+}
+
+.tit_vision {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  padding-top: 40px;
+  padding-left: 300px;
+  padding-right: 300px;
+}
+.tit_vision p {
+  text-align: justify;
+}
+
 .pie {
   display: flex;
   width: 100%;
@@ -527,6 +580,21 @@ button:hover {
     padding-top: 50px;
     flex-direction: column;
   }
+  .main_somos {
+    height: 1300px;
+  }
+  .tit_quienes {
+    padding-left: 50px;
+    padding-right: 50px;
+  }
+  .tit_mision {
+    padding-left: 50px;
+    padding-right: 50px;
+  }
+  .tit_vision {
+    padding-left: 50px;
+    padding-right: 50px;
+  }
 }
 @media only screen and (min-width: 481px) and (max-width: 992px) {
   body {
@@ -610,6 +678,18 @@ button:hover {
   .main_contacto {
     padding-top: 50px;
     flex-direction: column;
+  }
+  .tit_quienes {
+    padding-left: 50px;
+    padding-right: 50px;
+  }
+  .tit_mision {
+    padding-left: 50px;
+    padding-right: 50px;
+  }
+  .tit_vision {
+    padding-left: 50px;
+    padding-right: 50px;
   }
 }
 @media screen and (aspect-ratio: 16/9) {

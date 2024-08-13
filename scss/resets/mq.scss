@@ -109,6 +109,27 @@
         flex-direction: column;
     }
 
+    // quienes somos page
+
+    .main_somos{
+        height: 1300px;
+    }
+
+    .tit_quienes{
+        padding-left: 50px;
+        padding-right: 50px;
+    }
+
+    .tit_mision{
+        padding-left: 50px;
+        padding-right: 50px;
+    }
+
+    .tit_vision{
+        padding-left: 50px;
+        padding-right: 50px;
+    }
+
 }
 
 @media only screen and (min-width: 481px) and (max-width: 992px){
@@ -223,6 +244,26 @@
         flex-direction: column;
     }
 
+
+    // quienes somos page
+
+
+    .tit_quienes{
+        padding-left: 50px;
+        padding-right: 50px;
+    }
+
+    .tit_mision{
+        padding-left: 50px;
+        padding-right: 50px;
+    }
+
+    .tit_vision{
+        padding-left: 50px;
+        padding-right: 50px;
+    }
+
+    
 }
 
 @media screen and (aspect-ratio:16/9){

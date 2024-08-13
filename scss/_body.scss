@@ -11,7 +11,11 @@
 
 h1{
     width: 70%;
-    background-color: rgba(0, 0, 0, 0.486);
+    text-shadow: 
+    1px 1px 0px black,  /* Sombra a la derecha y abajo */
+    -1px 1px 0px black, /* Sombra a la izquierda y abajo */
+    1px -1px 0px black, /* Sombra a la derecha y arriba */
+    -1px -1px 0px black; /* Sombra a la izquierda y arriba */
     font-size: 2em;
     opacity: 0;
     transition: opacity 1s ease-in-out
@@ -26,6 +30,13 @@ h1{
     text-align: center
 }
 
+#subtitulo{
+    text-shadow: 
+    1px 1px 0px black,  /* Sombra a la derecha y abajo */
+    -1px 1px 0px black, /* Sombra a la izquierda y abajo */
+    1px -1px 0px black, /* Sombra a la derecha y arriba */
+    -1px -1px 0px black; /* Sombra a la izquierda y arriba */
+}
 
 h1.visible {
     opacity: 1;
@@ -326,3 +337,59 @@ button:hover {
   .tit_estudio{
     text-align: center;
   }
+
+  // MAIN QUIENES SOMOS
+
+  .main_somos{
+    height: 1000px;
+  }
+
+  .tit_quienes{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 40px;
+    padding-left: 300px;
+    padding-right: 300px;
+    
+    & p{
+        text-align: justify;
+    }
+  }
+
+  .nosotros{
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 4rem;
+    color: #9e0000;
+  }
+
+  .tit_mision{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 40px;
+    padding-left: 300px;
+    padding-right: 300px;
+
+    & p{
+        text-align: justify;
+    }
+  }
+  
+
+  .tit_vision{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 40px;
+    padding-left: 300px;
+    padding-right: 300px;
+
+    & p{
+        text-align: justify;
+    }
+  }
+
