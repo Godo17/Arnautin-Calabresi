@@ -1,26 +1,23 @@
-<?php
-// procesar_formulario.php
-$servidor = "localhost";
-$usuario = "root";
-$bd= "formulario";
-$conecta = mysqli_connect($servidor, $usuario, $bd):
-if($conecta->connect_error){
-    die("Error al conectar la base de datos de la página");
-}
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulario de Contacto</title>
+</head>
+<body>
+    <h2>Formulario de Contacto</h2>
+    <form action="procesar_formulario.php" method="post">
+        <label for="nombre">Nombre:</label><br>
+        <input type="text" id="nombre" name="nombre" required><br><br>
 
-// Verifica si el formulario fue enviado
-if ($_SERVER["REQUEST_METHOD"] == "POST") {
-    // Recoge y valida los datos del formulario
-    $nombre = htmlspecialchars($_POST['nombre']);
-    $email = htmlspecialchars($_POST['email']);
-    $mensaje = htmlspecialchars($_POST['comments']);
+        <label for="email">Email:</label><br>
+        <input type="email" id="email" name="email" required><br><br>
 
-    // Aquí puedes hacer lo que necesites con los datos, por ejemplo:
-    // - Guardarlos en una base de datos
-    // - Enviar un correo electrónico
-    // - Mostrar un mensaje de confirmación, etc.
+        <label for="comentarios">Comentarios:</label><br>
+        <textarea id="comentarios" name="comentarios" rows="4" cols="50"></textarea><br><br>
 
-    // Ejemplo de mensaje de confirmación
-    echo "Gracias, $nombre. Hemos recibido tu mensaje: \"$comments\" y te contactaremos pronto en $email.";
-}
-?>
+        <input type="submit" value="Enviar">
+    </form>
+</body>
+</html>
