@@ -50,3 +50,5 @@ document.addEventListener('DOMContentLoaded', () => {
       closeModal();
     }
   }
+
+  console.log(document.querySelector('.container'));
