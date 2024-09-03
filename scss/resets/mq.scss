@@ -6,6 +6,15 @@
         padding: 10px;
     }
 
+    #navbarNavAltMarkup{
+        width: 128px;
+    }
+    .nav_prelogo li{
+        font-size: 11px;
+    }
+    .nav_prelogo ul{  
+        padding-left: 0;
+    }
     .navbar-nav{
         & a{
             border-right: none;
@@ -139,6 +148,9 @@
         padding: 10px;
     }
 
+    .nav_prelogo ul{  
+        padding-left: 0;
+    }
     .navbar-nav{
         & a{
             border-right: none;
