@@ -355,7 +355,7 @@ button:hover {
 }
 
 .main_contacto {
-  background-image: url(/assets/fondomanos.jpg);
+  background-image: url(../assets/fondocereal.jpg);
   background-size: cover;
   background-attachment: fixed;
   background-repeat: no repeat;
