@@ -152,6 +152,7 @@ h3.visible{
 .contactar{
     display: flex;
     background-color: #0000008c;
+    padding-bottom: 100px;
 
 }
     
@@ -295,10 +296,35 @@ button:hover {
 
   // MAIN CONTACTO
 
-  .main_contacto{
-    background-color: #444343;
+  .cabeza_contactos{
+    padding-top: 20px;
+    width: 100%;
+    height: 80px;
+    display: inline-block;
+    align-items: center;
+    text-align: center;
+
+    & h2{
+        color: rgb(88, 88, 88);
+    }
+    & h4{
+        color: gray;
+    }
+  }
+
+  .separador{
     display: flex;
     justify-content: center;
+  }
+  .main_contacto{
+    background-image: url(/assets/fondomanos.jpg);
+    background-size: cover;
+    background-attachment: fixed;
+    background-repeat: no repeat;
+    
+    //background-color: #444343;
+
+    padding-bottom: 100px;
   }
 
   .datos_contacto{

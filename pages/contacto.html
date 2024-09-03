@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Arnautín-Calabresi Estudio</title>
+    <link rel="icon" type="image/x-icon" href="/assets/logotransparente.png">
 
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -20,8 +21,13 @@
         <div class="prelogo">
             <nav class="nav_prelogo">
                 <ul>
-                    <li class="list_nav_prelogo"> info@aycestudio.com.ar</li>
-                    <li class="list_nav_prelogo"> 2346-418550</li>
+                    <li class="list_nav_prelogo"> 
+                        <i class="fa-regular fa-envelope"></i>
+                        info@aycestudio.com.ar</li>
+                    <li class="list_nav_prelogo"> 
+                        <i class="fa-solid fa-square-phone-flip"></i>
+                        2346-418550
+                        </li>
                 </ul>
             </nav>
         </div>
@@ -51,57 +57,64 @@
     </header>
 
     <main class="main_contacto">
-
-        <div class="formulario">
-            <form id="contactForm" action="https://formspree.io/f/mrbzlegd" method="post">
-                <div class="form-group">
-                    <label for="firstName">Nombre:</label>
-                    <input type="text" id="firstName" name="firstName" required>
-                </div>
-                <div class="form-group">
-                    <label for="lastName">Apellido:</label>
-                    <input type="text" id="lastName" name="lastName" required>
-                </div>
-                <div class="form-group">
-                    <label for="company">Empresa:</label>
-                    <input type="text" id="company" name="company">
-                </div>
-                <div class="form-group">
-                    <label for="email">Correo Electrónico:</label>
-                    <input type="email" id="email" name="email" required>
-                </div>
-                <div class="form-group">
-                    <label for="comments">Comentarios:</label>
-                    <textarea id="comments" name="comments" rows="4" required></textarea>
-                </div>
-                <button type="submit">Enviar</button>
-            </form>
+        <div class="cabeza_contactos">
+            <h2> Contáctenos</h2>
+            <h4>Complete sus datos en el siguiente formulario y responderemos a la brevedad.</h4>
         </div>
-    </div>
 
-    <div class="datos_contacto">
-        <div class="ubicacion">
-            <img src="/assets/position.png" alt="position" width="30px">
-            <h5 class="tit_position">
-                Rio Juramento 183
-            </h5>
-            <p>Chivilcoy, Buenos Aires</p>
-        </div>
+        <div class="separador">
+            <div class="formulario">
+                <form id="contactForm" action="https://formspree.io/f/mrbzlegd" method="post">
+                    <div class="form-group">
+                        <label for="firstName">Nombre:</label>
+                        <input type="text" id="firstName" name="firstName" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="lastName">Apellido:</label>
+                        <input type="text" id="lastName" name="lastName" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="company">Empresa:</label>
+                        <input type="text" id="company" name="company">
+                    </div>
+                    <div class="form-group">
+                        <label for="email">Correo Electrónico:</label>
+                        <input type="email" id="email" name="email" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="comments">Comentarios:</label>
+                        <textarea id="comments" name="comments" rows="4" required></textarea>
+                    </div>
+                    <button type="submit">Enviar</button>
+                </form>
+            </div>
+        
     
-        <div class="telefono">
-            <img src="/assets/fono.png" alt="telefono" width="30px">
-            <h5 class="tit_fono">
-                2346-418550
-            </h5>
-        </div>
 
-        <div class="mail">
-            <img src="/assets/correo.png" alt="sobre" width="30px">
-            <h5 class="tit_correo">
-                info@aycestudio.com.ar
-            </h5>
+            <div class="datos_contacto">
+                <div class="ubicacion">
+                    <img src="/assets/position.png" alt="position" width="30px">
+                    <h5 class="tit_position">
+                        Rio Juramento 183
+                    </h5>
+                    <p>Chivilcoy, Buenos Aires</p>
+                </div>
+            
+                <div class="telefono">
+                    <img src="/assets/fono.png" alt="telefono" width="30px">
+                    <h5 class="tit_fono">
+                        2346-418550
+                    </h5>
+                </div>
+
+                <div class="mail">
+                    <img src="/assets/correo.png" alt="sobre" width="30px">
+                    <h5 class="tit_correo">
+                        info@aycestudio.com.ar
+                    </h5>
+                </div>
+            </div>
         </div>
-    </div>
 
     </main>
 
