@@ -612,6 +612,9 @@ button:hover {
     padding-top: 50px;
     flex-direction: column;
   }
+  .separador {
+    flex-direction: column;
+  }
   .main_somos {
     height: 1300px;
   }
