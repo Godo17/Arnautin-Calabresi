@@ -7,6 +7,20 @@
     width: 100%;
 }
 
+.logo_grande{
+    left: 25%; /* Ajusta la posición horizontal */
+    height: auto;
+    width: 600px;
+    width: 50%; 
+    
+}
+
+@keyframes fadeIn {
+    to {
+        opacity: 1;
+    }
+}
+
 
 
 h1{
@@ -22,7 +36,7 @@ h1{
 }
 .contenedor h1 {
     position: absolute;
-    top: 15%;
+    top: 500px;
     left: 50%;
     transform: translate(-50%, -50%);
     color: white; 
@@ -44,7 +58,7 @@ h1.visible {
 
 .contenedor h3 {
     position: absolute;
-    top: 18%;
+    top: 600px;
     left: 50%;
     transform: translate(-50%, -50%);
     color: white; 
@@ -90,10 +104,9 @@ h3.visible{
     display: flex;
     align-items: center;
     flex-direction: column;
-    padding-top: 100px;
     padding-left: 350px;
     padding-right:350px;
-    height: 1000px;
+    height: 1800px;
 
     & h4{
         color: rgb(85, 85, 85);
@@ -107,11 +120,11 @@ h3.visible{
 
 .tarjetas{
     display: flex;
-    
+    flex-direction: column;
 }
 
 .card_personal{
-    margin: 5px;
+    margin: 15px;
 }
 .servicios{
     display: flex;
